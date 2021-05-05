@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+.headline {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(images/background.png);
+  background-position: center;
+  background-size: cover;
+
+  &__delta-icon {
+    width: 200px;
+    height: 180px;
+  }
+
+  &__lodge-icon {
+    width: 200px;
+    height: 200px;
+  }
+}
