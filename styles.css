@@ -89,6 +89,10 @@ button:hover {
     transform: translateY(0);
   }
 }
+.fa-chevron-down:hover {
+  cursor: pointer;
+}
+
 * {
   box-sizing: border-box;
 }
