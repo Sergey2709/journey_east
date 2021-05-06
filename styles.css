@@ -1,19 +1,7 @@
-* {
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 16px;
-}
-
-body {
-  display: flex;
-}
-
 .headline {
   margin: auto;
   position: relative;
-  width: 1900px;
+  width: 1800px;
   height: 100vh;
   background-image: url(images/background.png);
   background-position: center;
@@ -27,6 +15,7 @@ body {
   position: absolute;
   top: 30px;
   left: 80px;
+  filter: contrast(2.5);
 }
 .headline__lodge-icon {
   max-width: 200px;
@@ -35,6 +24,7 @@ body {
   top: 30px;
   right: 100px;
   filter: brightness(0.9);
+  filter: contrast(3);
 }
 .headline-content {
   margin: 0;
@@ -82,6 +72,33 @@ button {
 button:hover {
   cursor: pointer;
   background-color: #0606f0;
+}
+
+.fa-chevron-down {
+  animation: jump 2s infinite;
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  display: flex;
 }
 
 /*# sourceMappingURL=styles.css.map */
