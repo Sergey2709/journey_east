@@ -6,21 +6,82 @@ html {
   font-size: 16px;
 }
 
+body {
+  display: flex;
+}
+
 .headline {
+  margin: auto;
   position: relative;
-  width: 100vw;
+  width: 1900px;
   height: 100vh;
   background-image: url(images/background.png);
   background-position: center;
   background-size: cover;
+  display: flex;
+  justify-content: center;
 }
 .headline__delta-icon {
-  width: 200px;
-  height: 180px;
+  max-width: 200px;
+  max-height: 180px;
+  position: absolute;
+  top: 30px;
+  left: 80px;
 }
 .headline__lodge-icon {
-  width: 200px;
-  height: 200px;
+  max-width: 200px;
+  max-height: 200px;
+  position: absolute;
+  top: 30px;
+  right: 100px;
+  filter: brightness(0.9);
+}
+.headline-content {
+  margin: 0;
+  font-size: 2.4em;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.headline-content__title {
+  margin: 1em 0 0 0;
+}
+.headline-content__name {
+  margin: 1em 0 0 0;
+}
+.headline-content__description {
+  margin: 3.5em auto 0;
+  max-width: 1000px;
+  font-size: 0.6em;
+  line-height: 1.5em;
+  background-color: rgba(2, 15, 56, 0.6);
+}
+
+.buttons {
+  margin-top: 30px;
+  max-width: 580px;
+  max-height: 50px;
+  display: flex;
+}
+.buttons-about {
+  margin-right: 80px;
+}
+
+button {
+  width: 250px;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  background-color: #040499;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #0606f0;
 }
 
 /*# sourceMappingURL=styles.css.map */
