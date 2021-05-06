@@ -1,5 +1,6 @@
 @import 'headline.scss';
 @import 'chevron.scss';
+@import 'about.scss';
 
 * {
   box-sizing: border-box;
@@ -11,4 +12,6 @@ html {
 
 body {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
 }

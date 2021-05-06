@@ -1,0 +1,19 @@
+.about {
+  margin: auto;
+  padding: 60px 200px 0 200px;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(245, 245, 220);
+
+  &__title {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 700;
+  }
+
+  &__description {
+    margin: 40px 0 0 0;
+    text-align: justify;
+    font-size: 20px;
+  }
+}
