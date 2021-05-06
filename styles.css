@@ -111,6 +111,32 @@ button:hover {
   font-size: 20px;
 }
 
+.links {
+  margin: auto;
+  padding: 60px 200px 0 200px;
+  width: 100vw;
+  height: 500px;
+  background-color: #dadada;
+  display: flex;
+  flex-direction: column;
+}
+.links__title {
+  font-size: 28px;
+}
+.links__item {
+  margin-left: 20px;
+  font-size: 26px;
+  line-height: 45px;
+  text-decoration: none;
+}
+.links__item:active {
+  color: darkblue;
+}
+.links__item:hover {
+  cursor: pointer;
+  color: #7070e0;
+}
+
 * {
   box-sizing: border-box;
 }

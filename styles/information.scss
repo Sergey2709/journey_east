@@ -1,0 +1,29 @@
+.links {
+  margin: auto;
+  padding: 60px 200px 0 200px;
+  width: 100vw;
+  height: 500px;
+  background-color: rgb(218, 218, 218);
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    font-size: 28px;
+  }
+
+  &__item {
+    margin-left: 20px;
+    font-size: 26px;
+    line-height: 45px;
+    text-decoration: none;
+  }
+
+  &__item:active {
+    color: darkblue;
+  }
+
+  &__item:hover {
+    cursor: pointer;
+    color: rgb(112, 112, 224);
+  }
+}
