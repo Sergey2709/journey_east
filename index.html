@@ -93,13 +93,50 @@
 
     <!-- FEEDBACK -->
 
-    <form class="feedback" action="send.php" method="POST">
+    <div class="feedback">
       <h2 class="feedback__title">Як стати масоном?</h2>
       <p class="feedback__description">
         Стати масоном може лише чоловік вільний та доброї слави, що досяг 21 року. Якщо Ви
         відповідаєте цим критеріям і хочете стати масоном, Ви маєте подати заявку.
       </p>
       <h3 class="feedback__subtitle">Заповнити заявку</h3>
-    </form>
+      <form class="form" action="send.php" method="POST">
+        <span class="form__email-signature"></span>e-mail*<input
+          class="form__email"
+          type="text"
+          name="email"
+          placeholder="Впишить свій e-mail"
+          required
+        />
+        <span class="form__name-signature">Ваше повне імя*</span
+        ><input class="form__name" type="text" name="fio" placeholder="Впишить ПІБ" required />
+        <span class="form__telephon-signature">Номер телефону</span
+        ><input
+          class="form__telephon"
+          type="tel"
+          name="telephon"
+          placeholder="Впишить номер телефону"
+        />
+        <span class="form__city-signature">Країна / Місто*</span
+        ><input
+          class="form__city"
+          type="text"
+          name="city"
+          placeholder="Впишить Країну та Місто проживання"
+          required
+        />
+        <span class="form__request-signature">Текст заявки у вільній формі*</span
+        ><input
+          class="form__request"
+          type="textarea"
+          name="request"
+          placeholder="Заява на попередній розгляд прохача"
+          maxlength="500"
+          maxlength="5"
+          required
+        />
+        <input type="submit" class="btn" />
+      </form>
+    </div>
   </body>
 </html>
